@@ -1,0 +1,10 @@
+#### Q.7 : Write a program to find sum of digits using recursion.
+
+def sum_digits(n):
+    if n == 0:
+        return 0
+    return (n % 10) + sum_digits(n // 10)
+
+num = int(input("Enter a number: "))
+result = sum_digits(num)
+print(f'The sum of digits of {num} is {result}.')
